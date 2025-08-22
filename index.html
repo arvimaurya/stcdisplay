@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Desk Nameplate Generator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f4f7fa;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header {
+      text-align: center;
+      padding: 12px;
+      background: #FF0000;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    header span {
+      display: block;
+      font-size: 15px;
+      margin-top: 4px;
+    }
+    .subheader {
+      text-align: center;
+      padding: 10px;
+      background: #0d47a1;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h2 {
+      font-size: 1.3em;
+      margin-bottom: 15px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+    p {
+      font-size: 1.1em;
+      margin: 8px 0;
+      animation: fadeIn 3s ease-in-out;
+    }
+    a {
+      color: #0d47a1;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 8px;
+      background: #696969;
+      color: white;
+      font-size: 14px;
+      margin-top: auto;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <script>
+    let count = 10;
+    function updateCountdown(){
+      document.getElementById("countdown").textContent = count;
+      if(count === 0){
+        window.location.href = "https://script.google.com/macros/s/AKfycbzhRu6r5t8nfYYIDwfoy2VSYQqamsAA9AVBdXPQde9PYe4iks1BnHb_1Hf-QcWuRAwW/exec";
+      }
+      count--;
+    }
+    setInterval(updateCountdown,1000);
+  </script>
+</head>
+<body>
+  <header>
+    SUPERVISOR TRAINING CENTER <br/>
+    <span>NORTHERN RAILWAY, CHARBAGH LUCKNOW</span>
+  </header>
+
+  <div class="subheader">DESK NAME PLATE GENERATION PAGE</div>
+
+  <main>
+    <h1>Welcome</h1>
+    <h2>Redirecting you to the Desk Nameplate Generator...</h2>
+    <p>You will be redirected in <span id="countdown">10</span> seconds.</p>
+    <p>If not redirected, <a href="https://script.google.com/macros/s/AKfycbzhRu6r5t8nfYYIDwfoy2VSYQqamsAA9AVBdXPQde9PYe4iks1BnHb_1Hf-QcWuRAwW/exec">click here</a>.</p>
+  </main>
+
+  <footer>
+    This webpage is created by Arvind Maurya (Chief Instructor, STC/CB/LKO). 
+    Contact: 9794830622 for help
+  </footer>
+</body>
+</html>
